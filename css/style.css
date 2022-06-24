@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+@import url(modules/navBar.css);
+@import url(modules/content.css);
+@import url(modules/blur.css);
+@import url(reset.css);
+@import url(colors.css);
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+}
+
+footer span {
+  position: absolute;
+  width: max-content;
+  bottom: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+  footer span {
+    padding: 0px 4px;
+  }
+}

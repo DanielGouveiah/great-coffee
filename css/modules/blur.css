@@ -1,0 +1,43 @@
+body::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 260px;
+  height: 260px;
+  bottom: 0;
+  z-index: -1;
+  background-color: var(--button);
+  filter: blur(180px);
+  position: absolute;
+}
+
+body::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 260px;
+  height: 260px;
+  right: 0;
+  z-index: -1;
+  background-color: var(--button);
+  filter: blur(180px);
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  body::before {
+    display: none;
+  }
+  body::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    bottom: -200px;
+    background-color: var(--button);
+    filter: blur(240px);
+    position: absolute;
+  }
+}
